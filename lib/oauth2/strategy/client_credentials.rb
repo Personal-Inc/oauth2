@@ -28,7 +28,7 @@ module OAuth2
 
       def access_token_params(options={}) #:nodoc:
         super(options).merge({
-          'grant_type'  => 'client_credentials '
+          'grant_type'  => 'client_credentials'
         })
       end
 
