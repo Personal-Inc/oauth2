@@ -10,7 +10,7 @@ module OAuth2
       def get_access_token(options={})
         response = @client.request(:post,
                                    @client.access_token_url,
-                                   access_token_params(username, password, options)
+                                   access_token_params(options)
                                   )
 
         params   = MultiJson.decode(response) rescue nil
