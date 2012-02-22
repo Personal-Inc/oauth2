@@ -91,7 +91,7 @@ module OAuth2
 
     def web_server;  OAuth2::Strategy::WebServer.new(self) end
     def password;    OAuth2::Strategy::Password.new(self) end
-    def credentials; puts "ide prilog"; OAuth2::Strategy::ClientCredentials.new(self) end
+    def credentials; OAuth2::Strategy::ClientCredentials.new(self) end
 
     private
 
